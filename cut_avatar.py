@@ -21,7 +21,7 @@ def crop_right(image):
 
 import_image = Image.open('image.jpg')
 (red, green, blue) = import_image.split()
-count_pixel = 100
+count_pixel = 60
 
 new_avatar = Image.merge("RGB", (crop_left(red), crop_middle(green), crop_right(blue)))
 new_avatar.save('full_new_avatar.jpg')
