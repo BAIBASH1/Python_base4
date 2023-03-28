@@ -23,18 +23,7 @@ if __name__ == '__main__':
     red, green, blue = import_image.split()
     count_pixel = 60
 
-<<<<<<< HEAD
     new_avatar = Image.merge("RGB", (crop_left(red), crop_middle(green), crop_right(blue)))
     new_avatar.save('full_new_avatar.jpg')
     new_avatar.thumbnail((80, 80))
     new_avatar.save('80x80_new_avatar.jpg')
-=======
-import_image = Image.open('image.jpg')
-(red, green, blue) = import_image.split()
-count_pixel = 60
-
-new_avatar = Image.merge("RGB", (crop_left(red), crop_middle(green), crop_right(blue)))
-new_avatar.save('full_new_avatar.jpg')
-new_avatar.thumbnail((80, 80))
-new_avatar.save('80x80_new_avatar.jpg')
->>>>>>> c64a07e596c149ccb774c9539a036e7b506b7182
